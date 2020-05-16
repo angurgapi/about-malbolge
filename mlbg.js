@@ -34,14 +34,11 @@ okButton.addEventListener('click', encrypt);
 function encrypt(){
   var msg = document.getElementById("tocode").value;
 	encodeAnswer.textContent = encode(msg);
-  console.log(encode(msg));
 }
-
 
 var normButton = document.getElementById("normbtn");
 normButton.addEventListener('click', decrypt);
 function decrypt(){
   var msg = document.getElementById("todecode").value;
 	decodeAnswer.textContent = decode(msg);
-	console.log(decode(msg));
 }
