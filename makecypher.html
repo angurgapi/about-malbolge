@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="mlbg.css">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+<title>malbolge</title>
+
+</head>
+
+<body translate="no">
+
+
+  <header id='header'>
+  <a class='nav-link' href="index.html#fullpage">
+  <div id='logo'>
+  <img src="images/head.png" alt="dante inferno">
+  <p>malbolge</p>
+  </div>
+  </a>
+  <nav id="navbar">
+  <ul class="nav-list">
+  <li><a class="nav-link" href="index.html#about">люди говорят</a></li>
+  <li>
+  <a class="nav-link" href="makecypher.html">шифровать</a>
+  </li>
+  <li>
+  <a class="nav-link" href="index.html#author">создатель</a>
+  </li>
+
+  </ul>
+  </nav>
+  </header>
+<div class="cypher-main">
+
+<div class="coder">
+
+  <div class="codecontainer">
+    <h3>Введите сообщение, которое хотите зашифровать (используйте латиницу)</h3>
+    <textarea id='tocode' class='input-textarea' name='tocode'></textarea>
+    <button id='okbtn' type="button" name="button">GO CRAZY</button>
+  </div>
+
+  <div class="resultcontainer">
+    <h3 >Результат:</h3>
+    <article id='encoderesult'>
+    </article>
+  </div>
+</div>
+
+<div class="coder">
+
+  <div class="codecontainer">
+    <h3>Введите сообщение, которое хотите расшифровать</h3>
+    <textarea id='todecode' class='input-textarea' name='todecode'></textarea>
+    <button id='normbtn' type="button" name="button">GO NORMAL</button>
+  </div>
+  <div class="resultcontainer">
+    <h3>Результат:</h3>
+    <article id='decoderesult'>
+      </article>
+  </div>
+</div>
+
+
+</div>
+<script src='mlbg.js'></script>
+
+  </body>
+  </html>
