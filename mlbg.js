@@ -7,9 +7,6 @@ var vocab = {'!':'5','"':'z',"#":"]",'$':'&','%':'g','&':'q',"'":'t','(':'y',')'
 		'o':'x','p':'D','q':'l','r':'}','s':'R','t':'E','u':'o','v':'k','w':'N','x':':','y':'#','z':'?','{':'G',
 		'|':'"','}':'i','~':'@',' ':' '};
 
-var encodeRes = document.getElementById('encoderesult');
-var decodeRes = document.getElementById('decoderesult');
-
 var encodeAnswer = document.getElementById('encoderesult');
 var decodeAnswer = document.getElementById('decoderesult');
 
