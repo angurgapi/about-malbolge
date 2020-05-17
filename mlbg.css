@@ -216,6 +216,12 @@ textarea{
     margin-bottom: 10px;
   }
 }
+.encoderesult{
+  max-width: 100%;
+  word-break: break-all;
+}
+
+
 @media(max-width:485px){
   .nav-link{
     font-size: 0.9rem;
