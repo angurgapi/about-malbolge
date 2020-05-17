@@ -4,8 +4,7 @@
 }
 
 body {
-      background-color: white;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 22px;
       font-weight: 400;
       line-height: 1.4;
@@ -22,13 +21,12 @@ body {
   width: 100%;
   margin: 0;
   height: 75px;
-  background-color: black;
-  color: white;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0,0,0,.13) 0 4px 16px;
+  font-weight: bolder;
+  font-variant: small-caps;
 }
 #logo{
   margin-left: 5px;
@@ -47,43 +45,111 @@ body {
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 .nav-link{
   text-decoration: none;
-  color: white;
+  color: inherit;
   margin-left: 10px;
 }
 
 /* index page */
-#intro-section{
-  width: 600px;
-  position: relative;
-  top:120px;
-  left:20px;
-  background-color: #f5f6f7;
+main{
+  display: flex;
+  flex-direction: row;
+  margin: 90px 20px 20px 20px;
+}
+.info-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+#quotes{
+  margin-left: 50px;
+}
+#quotes > p{
+  max-width: 300px;
+  margin-top: 50px;
+}
+#intro-section, #more-section{
+  display: flex;
+  flex-direction: row;
+
+  margin:50px;
+  max-width: 600px;
   color: black;
+  font-family: 'Roboto',Arial,sans-serif;
+
   border:2px solid black;
   padding: 12px;
-  z-index: -1;
 }
-#more-section {
-    width: 60%;
-    position: fixed;
-    top: 389px;
-    left: 520px;
-    z-index: 10;
-    border: 2px solid black;
-    background-color: white;
+h2{
+  margin-bottom: 4px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.bottom{
+  height:4px;
+  width: 40px;
+  border-bottom: solid black 3px;
+  margin-bottom: 20px;
+}
+.intro-malbolge{
+  max-width: 500px;
+  text-align: justify;
+}
+.code{
+  background-color: #dfdfe2;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+section > img {
+  width: 100%;
+  height:100%;
+}
+@media(max-width:900px){
+  #quotes{
+    margin-left: 15px;
+  }
+  #intro-section{
+    margin: 50px 10px 10px 10px;
+  }
+}
+@media (max-width:620px){
+  main{
+    flex-direction: column;
+  }
+  #quotes > p{
+    max-width: 90%;
+    }
+  section{
+    max-width:82vw;
+  }
+  .intro-malbolge{
+    max-width: 90%;
+  }
+  .code{
+    word-break: break-all;
+  }
 }
 
+.main-header{
+  box-shadow: rgba(0,0,0,.33) 0 4px 16px;
+  color: black;
+  background-color: white;
+
+}
 /* for the translator page */
-
+.encode-header{
+  background-color: black;
+  color: white;
+  box-shadow: rgba(255,255,255,.33) 0 4px 16px;
+}
 .cypher-main{
   display: flex;
   flex-direction: column;
-  margin: 100px 15px 15px 15px;
-  padding:20px;
+  /* margin: 100px 15px 15px 15px; */
+  padding:65px 20px 20px 20px;
   background-color: black;
   color:white;
   }
@@ -140,6 +206,7 @@ textarea{
 @media(max-width:725px){
   .coder{
     flex-direction: column;
+    padding-top: 20px;
   }
   .codecontainer, .resultcontainer{
     width: 95%;
