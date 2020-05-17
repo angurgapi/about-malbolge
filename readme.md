@@ -1,3 +1,4 @@
-there's a simple description of the subject and there's a translator
-where you can malbolge-style-encrypt any text that uses latin alphabet,
-or decrypt it back to normal. 
+Here's some basic description of Malbolge programming language. 
+
+There's "шифровать" page where you can malbolge-style-encrypt any text that's
+using latin alphabet, or decrypt it back to normal. 
