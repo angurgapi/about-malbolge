@@ -119,10 +119,12 @@ textarea{
   .coder{
     flex-direction: column;
     padding-top: 20px;
+    cursor: pointer;
   }
   .codecontainer, .resultcontainer{
     width: 95%;
     margin:auto;
+    font-size: 1rem;
   }
   #okbtn, #normbtn{
     margin-bottom: 10px;
@@ -134,7 +136,10 @@ textarea{
 }
 @media(max-width:485px){
   .nav-link{
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+  .resultcontainer{
+    word-break: break-all;
   }
 }
 footer{
