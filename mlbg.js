@@ -1,4 +1,4 @@
-var vocab = {'!':'5','"':'z',"#":"]",'$':'&','%':'g','&':'q',"'":'t','(':'y',')':'f','*':'r','+':'$',',':'(','-':'w',
+const vocab = {'!':'5','"':'z',"#":"]",'$':'&','%':'g','&':'q',"'":'t','(':'y',')':'f','*':'r','+':'$',',':'(','-':'w',
 		'.':'e','/':'4','0':'{','1':'W','2':'P','3':')','4':'H','5':'-','6':'Z','7':'n','8':',','9':'[',':':'%',
 		';':'\\','<':'3','=':'d','>':'L','?':'+','@':'Q','A':';','B':'>','C':'U','D':'!','E':'p','F':'J','G':'S',
 		'H':'7','I':'2','J':'F','K':'h','L':'O','M':'A','N':'1','O':'C','P':'B','Q':'6','R':'v','S':'^','T':'=',
@@ -7,35 +7,35 @@ var vocab = {'!':'5','"':'z',"#":"]",'$':'&','%':'g','&':'q',"'":'t','(':'y',')'
 		'o':'x','p':'D','q':'l','r':'}','s':'R','t':'E','u':'o','v':'k','w':'N','x':':','y':'#','z':'?','{':'G',
 		'|':'"','}':'i','~':'@',' ':' '};
 
-var encodeAnswer = document.getElementById('encoderesult');
-var decodeAnswer = document.getElementById('decoderesult');
+let encodeAnswer = document.getElementById('encoderesult');
+let decodeAnswer = document.getElementById('decoderesult');
 
 function encode(secret){
-  var answer = ''
+  let answerCoded = ''
   for (i=0;i<secret.length;i++){
-    answer += vocab[secret[i]];
+    answerCoded += vocab[secret[i]];
     }
-  return answer;
+  return answerCoded;
 }
 
 function decode(secret){
-  var answer = ''
+  let answerDecoded = ''
   for (i=0;i<secret.length;i++){
-    answer += Object.keys(vocab).find(key => vocab[key] === secret[i]);
+    answerDecoded += Object.keys(vocab).find(key => vocab[key] === secret[i]);
     }
-  return answer;
+  return answerDecoded;
 }
 
-var okButton = document.getElementById("okbtn");
+let okButton = document.getElementById("okbtn");
 okButton.addEventListener('click', encrypt);
 function encrypt(){
-  var msg = document.getElementById("tocode").value;
+  let msg = document.getElementById("tocode").value;
 	encodeAnswer.textContent = encode(msg);
 }
 
-var normButton = document.getElementById("normbtn");
+let normButton = document.getElementById("normbtn");
 normButton.addEventListener('click', decrypt);
 function decrypt(){
-  var msg = document.getElementById("todecode").value;
+  let msg = document.getElementById("todecode").value;
 	decodeAnswer.textContent = decode(msg);
 }
