@@ -4,14 +4,13 @@
 }
 
 body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Courier New', sans-serif;
       font-size: 22px;
       font-weight: 400;
       line-height: 1.4;
       color: black;
-      text-align: center;
-      font-family: 'Roboto' monospace;
-      background-color: black;
+      text-align: center;     
+      background-color: rgba(0,0,0,.6);
   }
 
 #header{
@@ -80,23 +79,25 @@ body {
   border-radius: 5px;
 }
 .coder{
+  min-height: 40vh;
   display: flex;
   flex-direction: row;
   padding: 10px;
 }
+
 h3{
+  margin: 1rem auto 1rem auto;
   color: white;
 }
 textarea{
-  background-color: white;
-  padding: 5px;
-  width: 95%;
+  background-color: rgba(255,255,255,.8);
+  padding: 1rem;
   max-width: 95%;
   height: 100px;
   border-radius: 3px;
 }
+
 #encoderesult, #decoderesult{
-  background-color: black;
   max-width: 99%;
   color:white;
   margin: 1.4rem;
@@ -105,14 +106,14 @@ textarea{
 
 
 #okbtn, #normbtn{
-  width: 80px;
-  height: 37px;
+  width: 85px;
+  height: 40px;
   border-radius: 10px;
   border: 2px solid black;
   background-color: #f5f6f7;
   font-weight: bolder;
   color:black;
-  margin: 15px auto auto auto;
+  margin: 15px auto 15px auto;
   box-shadow: rgba(255,255,255,.44) 0 4px 16px;
 }
 @media(max-width:725px){
@@ -147,13 +148,12 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  height:100px;
+  height:60px;
   width: 100%;
-  color:black;
+  color: rgba(0,0,0,.5);
   background-color: white;
   font-size: 0.9rem;
   font-weight: 30;
   letter-spacing: 2px;
-  position: absolute;
-  bottom:0;
+
 }
